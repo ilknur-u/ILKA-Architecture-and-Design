@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projects — ILKA Architecture</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <div class="logo">
+      <span class="logotype">ILKA</span>
+      <span class="logotype-sub">
+        <span>Architecture</span>
+        <span>and Design</span>
+      </span>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Homepage</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Selected Works</h1>
+        A collection of architectural and design projects exploring the dialogue between art, space, and human experience.
+      </p>
+    </div>
+
+    <section class="projects-section">
+      <div class="project-images">
+        <!-- Urban Hotel -->
+        <div class="project-image-wrapper hover-img-wrapper">
+          <a href="urban-hotel.html">
+            <img src="images/tophane-eskiz-1.jpg" alt="Urban Hotel">
+            <div class="hover-text">Urban Hotel</div>
+          </a>
+        </div>
+
+        <!-- Ceramic Atelier -->
+        <div class="project-image-wrapper hover-img-wrapper">
+          <a href="ceramic-atelier.html">
+            <img src="images/seramik-eskiz-1.jpg" alt="Ceramic Atelier">
+            <div class="hover-text">Ceramic Atelier</div>
+          </a>
+        </div>
+        
+        <!--Co-working Ofis -->
+        <div class="project-image-wrapper hover-img-wrapper">
+          <a href="co-working-ofis.html">
+            <img src="images/ofis-eskiz-1.jpg" alt="Co-working Ofis">
+            <div class="hover-text">Co-working Ofis</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> ILKA architecture — All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

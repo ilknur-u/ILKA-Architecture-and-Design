@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ILKA / Architecture and Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header class="site-header">
+    <div class="brand">
+        <div class="logo">
+            <span class="logotype">ILKA</span>
+            <span class="logotype-sub">
+                <span>Architecture</span>
+                <span>and Design</span>
+            </span>
+        </div>
+        <nav class="main-nav" aria-label="Ana navigasyon">
+            <a href="about-us.html" class="nav-link">About Us</a>
+            <a href="project.html" class="nav-link">Projects</a>
+            
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Art and Architecture</h1>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/ana-sayfa-resim.png" alt="Ana proje görseli">
+        </div>
+
+        <article>
+            <h3>Let’s build something together.</h3>
+            <p>Contact us to ask a question or begin a conversation.</p>
+            <p><a class="cta" href="#">Get in Touch</a></p>
+        </article>
+
+        <div class="contact-section">
+          <h3>Contact</h3>
+            <p>Email: <a href="mailto:ilknur.racu@gmail.com">ilknur.racu@gmail.com</a></p>
+            <p>Address: Firuzaga Mahallesi, Beyoglu, Istanbul.</p>
+        </div>
+
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="year"></span> ILKA architecture — All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const contactBtn = document.querySelector('.cta');
+const contactSection = document.querySelector('.contact-section');
+
+contactBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  if (contactSection.style.display === "none") {
+    contactSection.style.display = "block";
+    contactBtn.textContent = "Hide Contact Info";
+  } else {
+    contactSection.style.display = "none";
+    contactBtn.textContent = "Get in Touch";
+  }
+});
+</script>
+
+</body>
+</html>

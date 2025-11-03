@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Urban Hotel — ILKA Architecture</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+  <div class="brand">
+    <div class="logo">
+      <span class="logotype">ILKA</span>
+      <span class="logotype-sub">
+        <span>Architecture</span>
+        <span>and Design</span>
+      </span>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Homepage</a>
+      <a href="project.html" class="nav-link">Projects</a>
+    </nav>
+  </div>
+</header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Urban Hotel</h1>
+        <p style="color:#666; 
+                  max-width:1000px;">
+          The ground floor plan preserves the unique texture of Tophane. Connections between streets are established and commercial functions are given to the ground floor. The hotel consists of interrelated masses connected by a common core.
+        </p>
+      </div>
+
+     <div class="project-images">
+  <a href="#img1" class="project-image-wrapper">
+    <img src="images/tophane-eskiz-2.jpg" alt="Urban Hotel Sketch 1">
+  </a>
+  <a href="#img2" class="project-image-wrapper same-height">
+    <img src="images/tophane-eskiz-3.jpg" alt="Urban Hotel Sketch 2">
+  </a>
+  <a href="#img3" class="project-image-wrapper same-height">
+    <img src="images/tophane-kesiti.png" alt="Urban Hotel Sketch 3">
+  </a>
+  <a href="#img4" class="project-image-wrapper same-height">
+    <img src="images/tophane-plan.png" alt="Urban Hotel Sketch 4">
+  </a>
+</div>
+
+<!-- Lightbox CSS modalları -->
+<div id="img1" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="images/tophane-eskiz-2.jpg" alt="Urban Hotel Sketch 1">
+</div>
+
+<div id="img2" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="images/tophane-eskiz-3.jpg" alt="Urban Hotel Sketch 2">
+</div>
+
+<div id="img3" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="images/tophane-kesiti.png" alt="Urban Hotel Sketch 3">
+</div>
+
+<div id="img4" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <img src="images/tophane-plan.png" alt="Urban Hotel Sketch 4">
+</div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> ILKA architecture — All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

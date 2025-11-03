@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>About Me — ILKA Architecture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+      
+        html, body {
+            height: 105%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1; 
+        }
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="brand">
+        <div class="logo">
+            <span class="logotype">ILKA</span>
+            <span class="logotype-sub">
+                <span>Architecture</span>
+                <span>and Design</span>
+            </span>
+        </div>
+        <nav class="main-nav" aria-label="Ana navigasyon">
+            <a href="index.html" class="nav-link">Homepage</a>
+            <a href="project.html" class="nav-link">Projects</a>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+    <section class="hero">
+        <div class="hero-left">
+            <h1>About Me</h1>
+            <p style="color:#666;   
+                      max-width:800px;">
+                Hi, I'm <strong>Ilknur Ucar</strong>, an architect and designer based in Istanbul. I have a passion for creating spaces that blend functionality, aesthetic appeal, and human experience. Through my projects, I aim to explore the dialogue between environment, culture, and design.
+            </p>
+        </div>
+
+        <article>
+            <h3>Skills & Interests</h3>
+            <ul style="color:#666;
+                       max-width:800px;">
+                <li>Architectural Design & Urban Planning</li>
+                <li>Interior Design & Spatial Concept Development</li>
+                <li>Sustainable and Environmentally Friendly Design</li>
+                <li>Visualization, Sketching & 3D Modeling</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:ilknur.racu@gmail.com">ilknur.racu@gmail.com</a></p>
+            <p>Address: Firuzaga Mahallesi, Beyoglu, Istanbul</p>
+            <p>Tel: 0552xxxxxxx</p>
+        </article>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="year"></span> ILKA architecture — All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

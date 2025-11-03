@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ceramic Atelier — ILKA Architecture</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <div class="logo">
+      <span class="logotype">ILKA</span>
+      <span class="logotype-sub">
+        <span>Architecture</span>
+        <span>and Design</span>
+      </span>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Homepage</a>
+      <a href="project.html" class="nav-link">Projects</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Ceramic Atelier</h1>
+      <p style="color:#666;
+                max-width:1000px;">
+        A creative space where ceramic art and design meet. The atelier encourages experimentation and artistic dialogue.
+      </p>
+    </div>
+
+    <div class="project-images">
+      <a href="#img1" class="project-image-wrapper">
+        <img src="images/seramik-eskiz-2.jpeg" alt="Ceramic Sketch 1">
+        <div class="hover-text">Sketch 1</div>
+      </a>
+      <a href="#img2" class="project-image-wrapper">
+        <img src="images/seramik-eskiz-3.jpg" alt="Ceramic Sketch 2">
+        <div class="hover-text">Sketch 2</div>
+      </a>
+      <a href="#img3" class="project-image-wrapper">
+        <img src="images/seramik-eskiz-4.jpg" alt="Ceramic Sketch 3">
+        <div class="hover-text">Sketch 3</div>
+      </a>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="img1" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img src="images/seramik-eskiz-2.jpeg" alt="Ceramic Sketch 1">
+    </div>
+    <div id="img2" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img src="images/seramik-eskiz-3.jpg" alt="Ceramic Sketch 2">
+    </div>
+    <div id="img3" class="lightbox">
+      <a href="#" class="close">&times;</a>
+      <img src="images/seramik-eskiz-4.jpg" alt="Ceramic Sketch 3">
+    </div>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> ILKA architecture — All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
